@@ -30,16 +30,19 @@
 
 
 <script type="text/javascript">
-    $('.grid').masonry({
+    var $container = $('#container')
         // options
-        itemSelector: '.grid-item',
-        columnWidth: 200
+        $container.masonry({
+        columnWidth: 200,
+        itemSelector: '.item'
     });
+
   $(window).load(function(){
-    $('.grid').masonry({
+    var $container = $('#container');
         // options
-        itemSelector: '.grid-item',
-        columnWidth: 200
+      $container.masonry({
+          columnWidth: 200,
+          itemSelector: '.item'
     });
   })
 </script>
